@@ -34,7 +34,6 @@ body {
 }
 #content h2 {
   color: rgb(255, 255, 255);
-  margin-bottom: 1rem;
   font-size: 7rem;
 }
 #output {
@@ -51,17 +50,22 @@ input {
   text-align: center;
   color: black;
   font-weight: bold;
+  background: rgba(252, 252, 252, 0.856);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.089);
+  border: none;
 }
 button {
   padding: 0.8rem;
-  margin: 1rem 2rem 1rem 1rem;
+  margin: 1rem 2rem 1.5rem 1rem;
   width: 10rem;
   outline: none;
   cursor: pointer;
   text-align: center;
   color: black;
   font-weight: bold;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.212);
+  border: none;
+  background: rgb(252, 252, 252);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 #logo {
   margin: 0.5rem 0 0 2rem;
@@ -69,4 +73,34 @@ button {
   font-size: 3rem;
   font-family: 'Caveat', cursive;
   cursor: pointer;
+}
+#section .sadTheme {
+  background-image: url('./images/sad.jpg');
+  background-size: 100% 100%;
+}
+
+#section .happyTheme {
+  background-image: url('./Images/happy.jpg');
+  background-size: 100% 100%;
+}
+
+.noBg {
+  background-image: url('');
+}
+.header a {
+  color: white;
+  margin-left: 96rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+  font-weight: 700;
+}
+#btn:hover,
+#reset:hover {
+  color: white;
+  background: rgba(179, 33, 33, 0.774);
+}
+#output {
+  color: black;
 }
