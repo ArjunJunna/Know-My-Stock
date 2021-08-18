@@ -8,9 +8,6 @@ const reset = document.querySelector('#reset');
 form.addEventListener('submit', checkHandler);
 function checkHandler(e) {
   e.preventDefault();
-  section.classList.remove('noBg');
-  content.classList.remove('sadTheme');
-  content.classList.remove('happyTheme');
 
   let CP = inputs[0].value;
   let Qty = inputs[1].value;
@@ -52,4 +49,6 @@ reset.addEventListener('click', function () {
   inputs[1].value = '';
   inputs[2].value = '';
   output.innerHTML = '';
+  content.classList.remove('happyTheme');
+  content.classList.remove('sadTheme');
 });
