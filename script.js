@@ -16,7 +16,7 @@ function checkHandler(e) {
     CP = Number(CP);
     Qty = Number(Qty);
     SP = Number(SP);
-    if (CP > 0 && Qty > 0 && SP > 0) {
+    if (CP > 0 && Qty > 0) {
       //loss
       if (CP > SP) {
         const loss = ((CP - SP) * Qty).toFixed(2);
@@ -37,10 +37,10 @@ function checkHandler(e) {
           content.classList.add('happyTheme');
         }
       }
-    } else {
+    } /*else {
       //error
       output.innerHTML = `<div style="background-color: rgb(255,0,0,0.7); padding: 1rem">Please enter values bigger than 0</div>`;
-    }
+    }*/
   }
 }
 
