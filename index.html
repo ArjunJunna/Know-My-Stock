@@ -22,9 +22,11 @@
               <label>
                 <input
                   class="input"
-                  type="text"
+                  type="number"
                   placeholder="Enter the purchase price"
                   required
+                  min="1"
+                  oninput="this.value = Math.abs(this.value)"
                 />
                 Purchase Price
               </label>
@@ -32,9 +34,11 @@
               <label for="">
                 <input
                   class="input"
-                  type="text"
+                  type="number"
                   placeholder="Enter the stock quantity"
                   required
+                  min="1"
+                  oninput="this.value = Math.abs(this.value)"
                 />
                 Stock Quantity
               </label>
@@ -42,9 +46,11 @@
               <label for="">
                 <input
                   class="input"
-                  type="text"
+                  type="number"
                   placeholder="Enter the current price"
                   required
+                  min="0"
+                  oninput="this.value = Math.abs(this.value)"
                 />
                 Current Price
               </label>
